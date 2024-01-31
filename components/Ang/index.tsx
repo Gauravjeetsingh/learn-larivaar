@@ -16,9 +16,12 @@ const Ang = (props: AngProps): JSX.Element => {
   const [currentAngData, setCurrentAngData] = useState(Array<AngsData>);
   const [isLoading, setIsLoading] = useState(true);
 
-  const {larivaar, larivaarAssist, fontSize} = useStoreState(state => state);
-  const {setLarivaarAssist} = useStoreActions(actions => actions);
-  const [databaseDownloaded, setDatabaseDownloaded] = useState(false);
+  const {larivaar, larivaarAssist, fontSize, databaseDownloaded} =
+    useStoreState(state => state);
+  const {setLarivaarAssist, setDatabaseDownloaded} = useStoreActions(
+    actions => actions,
+  );
+
   const [downloadProgress, setDownloadProgress] = useState(0);
 
   const currentTheme = useTheme().colors;
@@ -29,13 +32,15 @@ const Ang = (props: AngProps): JSX.Element => {
       const realmFilePath = `${documentsPath}/sttmdesktop-evergreen-v2.realm`;
 
       const fileExists = await RNFS.exists(realmFilePath);
-      if (fileExists) {
+      if (fileExists && !databaseDownloaded) {
         setDatabaseDownloaded(true);
         return;
       }
       try {
         await downloadDBFile(setDownloadProgress);
-        setDatabaseDownloaded(true);
+        if (!databaseDownloaded) {
+          setDatabaseDownloaded(true);
+        }
       } catch (networkError) {
         console.error('Network error occurred during download:', networkError);
         return;

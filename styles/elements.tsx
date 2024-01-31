@@ -5,7 +5,7 @@ export const elementStyles = (theme: Theme['colors']) =>
   StyleSheet.create({
     gurbani: {
       color: theme.text,
-      fontFamily: 'GurbaniAkharThickTrue',
+      fontFamily: 'GurbaniAkharTrue',
       paddingTop: 12,
     },
     input: {

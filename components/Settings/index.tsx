@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {useStoreRehydrated} from 'easy-peasy';
 import {useTheme} from '@react-navigation/native';
 
 import {View, Text, Switch, Pressable, TouchableOpacity} from 'react-native';
@@ -38,8 +37,6 @@ const Settings = ({navigation}: DrawerContentComponentProps): JSX.Element => {
     setSwipeNavigation,
   } = useStoreActions(actions => actions);
 
-  const isRehydrated = useStoreRehydrated();
-
   const currentTheme = useTheme().colors;
   const themeStyles = elementStyles(currentTheme);
 
@@ -47,7 +44,7 @@ const Settings = ({navigation}: DrawerContentComponentProps): JSX.Element => {
   const [angModal, setAngModal] = useState(false);
   const [dateModal, setDateModal] = useState(false);
 
-  return isRehydrated ? (
+  return (
     <>
       <View style={layoutStyles.settingContainer}>
         <View style={layoutStyles.sidebarWrapper}>
@@ -199,8 +196,6 @@ const Settings = ({navigation}: DrawerContentComponentProps): JSX.Element => {
         </View>
       </View>
     </>
-  ) : (
-    <Text>Loading..</Text>
   );
 };
 

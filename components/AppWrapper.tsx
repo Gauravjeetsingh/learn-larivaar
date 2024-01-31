@@ -1,5 +1,7 @@
 import React from 'react';
 import 'react-native-gesture-handler';
+import {useStoreRehydrated} from 'easy-peasy';
+import {View, ActivityIndicator} from 'react-native';
 
 import {
   DrawerContentComponentProps,
@@ -15,6 +17,7 @@ import {
 import {Launchpad, Settings, About} from '.';
 import {useStoreState} from '../store/hooks';
 import {Header} from './AppHeader';
+import {layoutStyles} from '../styles';
 
 const Drawer = createDrawerNavigator();
 
@@ -43,7 +46,9 @@ const AppWrapper = (): JSX.Element => {
   const {darkTheme, leftHandedMode} = useStoreState(state => state);
   const currentTheme = darkTheme === true ? AppDarkTheme : AppLightTheme;
 
-  return (
+  const isRehydrated = useStoreRehydrated();
+
+  return isRehydrated ? (
     <NavigationContainer theme={currentTheme}>
       <Drawer.Navigator drawerContent={props => getSettings(props)}>
         <Drawer.Screen
@@ -64,6 +69,10 @@ const AppWrapper = (): JSX.Element => {
         />
       </Drawer.Navigator>
     </NavigationContainer>
+  ) : (
+    <View style={layoutStyles.mainContainer}>
+      <ActivityIndicator />
+    </View>
   );
 };
 
