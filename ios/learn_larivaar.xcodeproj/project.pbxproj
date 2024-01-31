@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-learn_larivaar-learn_larivaarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-learn_larivaar-learn_larivaarTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		FD9D8C09821F45699DB59E27 /* GurbaniAkharTrue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 742DA81BA1F54B3395DC0FBB /* GurbaniAkharTrue.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +38,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = learn_larivaar/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = learn_larivaar/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-learn_larivaar-learn_larivaarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learn_larivaar-learn_larivaarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26778B3B2B388D600087C9D3 /* db.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.realm; path = ../db.realm; sourceTree = "<group>"; };
+		26C6173E2B4C20350099AB0D /* GurbaniAkharTrue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GurbaniAkharTrue.ttf; path = ../../../assets/fonts/GurbaniAkharTrue.ttf; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-learn_larivaar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn_larivaar.debug.xcconfig"; path = "Target Support Files/Pods-learn_larivaar/Pods-learn_larivaar.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-learn_larivaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn_larivaar.release.xcconfig"; path = "Target Support Files/Pods-learn_larivaar/Pods-learn_larivaar.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-learn_larivaar-learn_larivaarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn_larivaar-learn_larivaarTests.debug.xcconfig"; path = "Target Support Files/Pods-learn_larivaar-learn_larivaarTests/Pods-learn_larivaar-learn_larivaarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-learn_larivaar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learn_larivaar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		742DA81BA1F54B3395DC0FBB /* GurbaniAkharTrue.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = GurbaniAkharTrue.ttf; path = ../assets/fonts/GurbaniAkharTrue.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = learn_larivaar/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-learn_larivaar-learn_larivaarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn_larivaar-learn_larivaarTests.release.xcconfig"; path = "Target Support Files/Pods-learn_larivaar-learn_larivaarTests/Pods-learn_larivaar-learn_larivaarTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAD8A3E92A5C278A007F940D /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				26778B3B2B388D600087C9D3 /* db.realm */,
 				BAD8A3E82A5C278A007F940D /* Fonts */,
 				13B07FAE1A68108700A75B9A /* learn_larivaar */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -139,6 +144,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				DA97B5C0E4994765A58908B9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 		BAD8A3E82A5C278A007F940D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				26C6173E2B4C20350099AB0D /* GurbaniAkharTrue.ttf */,
 				BAD8A3E92A5C278A007F940D /* Fontisto.ttf */,
 				BAD8A3EA2A5C278A007F940D /* Octicons.ttf */,
 				BAD8A3EB2A5C278A007F940D /* Feather.ttf */,
@@ -187,6 +194,15 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-learn_larivaar-learn_larivaarTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA97B5C0E4994765A58908B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				742DA81BA1F54B3395DC0FBB /* GurbaniAkharTrue.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +301,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				FD9D8C09821F45699DB59E27 /* GurbaniAkharTrue.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

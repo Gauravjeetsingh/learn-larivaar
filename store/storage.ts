@@ -7,7 +7,7 @@ export const customStorage = {
   async getItem(key: string): Promise<StoreProperties | null> {
     const data = await AsyncStorage.getItem(key);
     if (data) {
-      console.log('data', JSON.parse(data));
+      // console.log('data', JSON.parse(data));
       return JSON.parse(data);
     }
     return null;
