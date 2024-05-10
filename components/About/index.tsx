@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {JSX} from 'react';
 import {
   View,
   Text,
@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Button,
 } from 'react-native';
-import {elementStyles, layoutStyles} from '../../styles';
+import {elementStyles} from '../../styles';
 import {useTheme} from '@react-navigation/native';
 
 const About = ({navigation}: any): JSX.Element => {
@@ -20,7 +20,7 @@ const About = ({navigation}: any): JSX.Element => {
     Linking.openURL('http://www.banidb.com/');
   };
   return (
-    <View style={layoutStyles.aboutContainer}>
+    <View>
       <Text style={themeStyles.aboutText}>Created by</Text>
       <Image
         style={themeStyles.logo}
