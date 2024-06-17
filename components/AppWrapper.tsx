@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {JSX} from 'react';
 import 'react-native-gesture-handler';
 
 import {

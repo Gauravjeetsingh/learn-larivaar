@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, JSX} from 'react';
 import {TextInput, View} from 'react-native';
 
 import 'react-native-gesture-handler';

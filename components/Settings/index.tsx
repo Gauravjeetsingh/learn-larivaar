@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, JSX} from 'react';
 import {useStoreRehydrated} from 'easy-peasy';
 import {useTheme} from '@react-navigation/native';
 

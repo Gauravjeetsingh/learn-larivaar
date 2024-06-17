@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, JSX} from 'react';
 import 'react-native-gesture-handler';
 
 import {SafeAreaView, ScrollView, StatusBar, View} from 'react-native';
