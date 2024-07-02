@@ -11,7 +11,7 @@ export interface StoreProperties {
   currentAng: number;
   angsPerDay: number;
   currentAngForToday: number;
-  completionDate: Date;
+  completionDate: Date | null;
 }
 
 export interface StoreInterface extends StoreProperties {

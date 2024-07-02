@@ -514,7 +514,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B3W82WVBU9;
 				ENABLE_BITCODE = NO;
@@ -532,11 +532,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.cyfersystems.learnlarivaar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyfersystems.learnlarivaar;
 				PRODUCT_NAME = learn_larivaar;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Gauravjeet_learn-larivaar-v1-_06-11-2023";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "learn-larivaar-gaurav-crs";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -557,7 +556,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B3W82WVBU9;
 				INFOPLIST_FILE = learn_larivaar/Info.plist;
@@ -574,11 +573,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.cyfersystems.learnlarivaar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyfersystems.learnlarivaar;
 				PRODUCT_NAME = learn_larivaar;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Gauravjeet_learn-larivaar-v1-_06-11-2023";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "learn-larivaar-gaurav-crs";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
