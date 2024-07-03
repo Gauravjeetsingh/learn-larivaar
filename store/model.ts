@@ -13,6 +13,7 @@ export const storeModel: StoreInterface = {
   completionDate: new Date(),
   angsPerDay: 0,
   currentAngForToday: 0,
+  databaseDownloaded: false,
 
   setFontSize: action((state, payload) => {
     try {
@@ -96,6 +97,13 @@ export const storeModel: StoreInterface = {
       state.currentAngForToday = payload;
     } catch (error) {
       console.error('Error setting currentAngForToday:', error);
+    }
+  }),
+  setDatabaseDownloaded: action((state, payload) => {
+    try {
+      state.databaseDownloaded = payload;
+    } catch (error) {
+      console.error('Error setting databaseDownloaded:', error);
     }
   }),
 };

@@ -1,6 +1,7 @@
 import React, {JSX} from 'react';
 import 'react-native-gesture-handler';
-import {Text} from 'react-native';
+import {useStoreRehydrated} from 'easy-peasy';
+import {View, ActivityIndicator} from 'react-native';
 
 import {
   DrawerContentComponentProps,
@@ -13,11 +14,10 @@ import {
   NavigationContainer,
 } from '@react-navigation/native';
 
-import {useStoreRehydrated} from 'easy-peasy';
-
 import {Launchpad, Settings, About} from '.';
 import {useStoreState} from '../store/hooks';
 import {Header} from './AppHeader';
+import {layoutStyles} from '../styles';
 
 const Drawer = createDrawerNavigator();
 
@@ -70,7 +70,9 @@ const AppWrapper = (): JSX.Element => {
       </Drawer.Navigator>
     </NavigationContainer>
   ) : (
-    <Text>Loading...</Text>
+    <View style={layoutStyles.mainContainer}>
+      <ActivityIndicator />
+    </View>
   );
 };
 

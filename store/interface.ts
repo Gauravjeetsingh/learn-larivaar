@@ -12,6 +12,7 @@ export interface StoreProperties {
   angsPerDay: number;
   currentAngForToday: number;
   completionDate: Date | null;
+  databaseDownloaded: boolean;
 }
 
 export interface StoreInterface extends StoreProperties {
@@ -26,4 +27,5 @@ export interface StoreInterface extends StoreProperties {
   setAngsPerDay: Action<StoreInterface, number>;
   setCurrentAngForToday: Action<StoreInterface, number>;
   setCompletitionDate: Action<StoreInterface, Date | null>;
+  setDatabaseDownloaded: Action<StoreInterface, boolean>;
 }
