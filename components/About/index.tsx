@@ -9,8 +9,10 @@ import {
 } from 'react-native';
 import {elementStyles} from '../../styles';
 import {useTheme} from '@react-navigation/native';
+import {ScrollView} from 'react-native-gesture-handler';
 
 const About = ({navigation}: any): JSX.Element => {
+  const isDarkMode = useTheme().dark;
   const currentTheme = useTheme().colors;
   const themeStyles = elementStyles(currentTheme);
   const handlePressKhalis = () => {
@@ -20,11 +22,15 @@ const About = ({navigation}: any): JSX.Element => {
     Linking.openURL('http://www.banidb.com/');
   };
   return (
-    <View>
+    <ScrollView>
       <Text style={themeStyles.aboutText}>Created by</Text>
       <Image
         style={themeStyles.logo}
-        source={require('../../assets/images/khalis-logo.png')}
+        source={
+          isDarkMode
+            ? require('../../assets/images/khalis-logo-dark.png')
+            : require('../../assets/images/khalis-logo.png')
+        }
       />
       <Text style={themeStyles.aboutText}>
         We welcome your comments, suggestions and corrections! For more
@@ -53,7 +59,7 @@ const About = ({navigation}: any): JSX.Element => {
           }}
         />
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
